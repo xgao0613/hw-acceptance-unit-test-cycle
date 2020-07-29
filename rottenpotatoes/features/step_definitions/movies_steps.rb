@@ -24,5 +24,5 @@ Then /I should see all the movies/ do
 end
 
 Then /the director of "(.*)" should be "(.*)"/ do |title, director|
-  expect(Movie.find_by(title: title).director).to equal(director)
+  expect(Movie.find_by(title: title).director).to eq(director)
 end
